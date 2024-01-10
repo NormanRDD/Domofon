@@ -1,0 +1,33 @@
+@mixin media($size) {
+  @if $size ==phone-only {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @else if $size ==tablet-landscape-up {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+
+  @else if $size ==desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @else if $size ==big-desktop-up {
+    @media (min-width: 1920px) {
+      @content;
+    }
+  }
+}
+
+// @mixin adaptive-size($pcSize, $mobSize, $sizeValue) {
+//   #{$sizeValue}: calc(#{$mobSize + px} + #{$pcSize - $mobSize} * ((100vw - 320px) / (1920 - 320)));
+// }
+// @mixin adaptive-1024-mob($pcSize, $mobSize, $sizeValue) {
+//   #{$sizeValue}: clamp(#{$mobSize + px}, #{$mobSize + px} + #{$pcSize - $mobSize} * ((100vw - 320px) / (1024 - 320)), #{$pcSize + px});
+// }

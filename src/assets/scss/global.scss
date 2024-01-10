@@ -1,0 +1,98 @@
+ @import './media.scss';
+ @import './reset.sass';
+
+
+ *,
+ *:before,
+ *:after {
+     box-sizing: border-box;
+
+
+ }
+
+
+ body,
+ html {
+     padding: 0;
+     scroll-behavior: smooth;
+     margin: 0;
+
+     @include media('desktop-up') {
+         font-size: .83333vw;
+     }
+ }
+
+ body {
+     overflow-x: hidden;
+     font-family: "Lato Regular";
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ ul,
+ li {
+     // margin: 0;
+     // padding: 0;
+     box-sizing: border-box;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ ul {
+     list-style: none;
+ }
+
+ button {
+     cursor: pointer;
+     outline: none;
+ }
+
+ input,
+ button,
+ textarea {
+     border: none;
+     outline: none;
+ }
+
+ .container {
+     margin: 0 auto;
+     width: 100%;
+     padding: 0 40px;
+ }
+
+ .hooper-list {
+     outline: none !important;
+ }
+
+ .designersAbout {
+     .hooper-prev {
+         left: -25px;
+
+         @include media("tablet-landscape-up") {
+             left: -35px;
+         }
+     }
+
+     .hooper-next {
+         right: -25px;
+
+         @include media("tablet-landscape-up") {
+             right: -20px !important;
+             padding: 0 !important;
+
+         }
+     }
+ }
+
+ .comforter {
+     font-family: 'Comforter', cursive;
+ }

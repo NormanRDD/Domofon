@@ -1,0 +1,11 @@
+import { createApp } from "vue";
+import App from "./App.vue";
+import store from "./store";
+import router from "./plugins/router";
+import Cookies from "./plugins/cookie";
+import "./assets/scss/main.scss";
+const app = createApp(App);
+app.use(store);
+app.use(Cookies);
+app.use(router);
+app.mount("#app");
