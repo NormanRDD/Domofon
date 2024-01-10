@@ -3,6 +3,8 @@
 Login: username
 Password: password
 
+Проект содержит :
+
 -CSS анинмаций ,loader
 
 -Адаптивнность
