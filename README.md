@@ -4,9 +4,7 @@ Login: username
 
 Password: password
 
-
-
-Проект содержит :
+ПРОЕКТ СОДЕРЖИТ :
 
 -CSS анинмаций ,loader
 
